@@ -1,0 +1,648 @@
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/owl-slider.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/settings.css"/>
+        <link rel="shortcut icon" href="assets/images/favicon.png" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <title>Blog Details</title>
+    </head>
+    <body>
+    <div class="awe-page-loading">
+         <div class="awe-loading-wrapper">
+            <div class="awe-loading-icon">
+               <img src="assets/images/logo.png" alt="images">
+            </div>
+            <div class="progress">
+               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+         </div>
+      </div>    
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content popup-search">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control control-search" placeholder="Search and hit enter...">
+                        <button class="button_search" type="button">Search</button>
+                    </div><!-- /input-group -->
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- End pushmenu -->
+    <div class="wrappage">
+        <header id="header" class="header-v1">
+            <div class="header-top">
+                    <div class="container">
+                    <div class="box">
+                        <p class="icon-menu-mobile"><i class="fa fa-bars" ></i></p>
+                        <div class="logo"><a href="#" title="Uno">
+                        <img src="assets/images/logo.png" alt="images">
+                        </a></div>
+                        <div class="logo-mobile"><a href="#" title="Xanadu"><img src="assets/images/logo.png" alt="Xanadu-Logo"></a></div>
+
+                        <div class="box-right">
+                            <div class="cart hover-menu">
+                                 <p class="icon-cart" title="Add to cart">
+                                        <i class="icon"></i>
+                                        <span class="cart-count">2</span>
+                                    </p>
+                                    <div class="cart-list list-menu">
+                                    <ul class="list">
+                                        <li>
+                                            <a href="#" title="" class="cart-product-image"><img src="assets/images/products/1.jpg" alt="Product"></a>
+                                            <div class="text">
+                                                <p class="product-name">Union Bed</p>
+                                                <p class="product-price"><span class="price-old">$700.00</span><span class="price">$350.00</span></p>
+                                                <p class="qty">QTY:01</p>
+                                            </div>
+                                            <a class="close" href="#" title="close"><i class="fa fa-times-circle"></i></a>
+                                        </li> 
+                                        <li>
+                                            <a href="#" title="" class="cart-product-image"><img src="assets/images/products/1.jpg" alt="Product"></a>
+                                            <div class="text">
+                                                <p class="product-name">Union Bed</p>
+                                                <p class="product-price"><span class="price-old">$700.00</span><span class="price">$350.00</span></p>
+                                                <p class="qty">QTY:01</p>
+                                            </div>
+                                            <a class="close" href="#" title="close"><i class="fa fa-times-circle"></i></a>
+                                        </li>                                   
+                                    </ul>
+                                    <p class="total"><span class="left">Total:</span> <span class="right">$1121.98</span></p>
+                                    <div class="bottom">
+                                        <a class="link-v1" href="#" title="viewcart">View Cart</a>
+                                        <a class="link-v1 rt" href="#" title="checkout">Check out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings hover-menu">
+                                <a href="#" title="settings">
+                                    <span class="icons-setting"></span>
+                                </a>
+                                <ul class="submenu list-menu align-left">
+                                    <li>
+                                        <div class="container-fluid">
+                                            <h3>Select Language</h3>
+                                            <ul class="language">
+                                                <li class="active"><a href="#" title="language"><img src="assets/images/lg-1.jpg" alt="language"></a></li>
+                                                <li><a href="#" title="language"><img src="assets/images/lg-2.jpg" alt="language"></a></li>
+                                                <li><a href="#" title="language"><img src="assets/images/lg-3.jpg" alt="language"></a></li>
+                                                <li><a href="#" title="language"><img src="assets/images/lg-4.jpg" alt="language"></a></li>
+                                            </ul>
+                                            <h3>Select Currency</h3>
+                                            <ul class="currency">
+                                                <li class="active"><a href="#" title="$"><span class="fa fa-dollar"></span></a></li>
+                                                <li><a href="#" title="$"><span class="fa fa-euro"></span></a></li>
+                                                <li><a href="#" title="$"><span class="fa fa-cny"></span></a></li>
+                                            </ul>
+                                            <ul class="infor">
+                                                <li><span class="fa fa-unlock-alt"></span><a id="openLogin" href="#" title="login">Login / Register</a></li>
+                                                <li><span class="fa fa-user"></span><a href="#" title="My Account">My Account</a></li>
+                                                <li><span class="fa fa-heart"></span><a href="#" title="My Wishlist">My Wishlist</a></li>
+                                                <li><span class="fa fa-check-circle"></span><a href="#" title="Checkout">Checkout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search dropdown" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                <i class="icon"></i>
+                            </div>
+                        </div>
+                        <nav class="mega-menu">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                          <ul class="nav navbar-nav" id="navbar">
+                            <li class="level1 active dropdown"><a href="#" title="Home">Home</a>
+                                <ul class="menu-level-1 dropdown-menu">
+                                   <li class="level2"><a href="home_v1.html" title="Home 1">Home 1</a></li>
+                                    <li class="level2"><a href="home_v2.html" title="Home 2">Home 2</a></li>
+                                    <li class="level2"><a href="home_v3.html" title="Home 3">Home 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="level1 dropdown">
+                                <a href="#" title="men">Shop</a>
+                                <div class="sub-menu sub-menu-v2 dropdown-menu">
+                                  <ul class="menu-level-1">
+                                    <li class="level2"><a href="#">Living Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Seatings">Seatings</a></li>
+                                            <li class="level3"><a href="#" title="Tables">Tables</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Series">Series</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">BATH Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Lighting">Lighting</a></li>
+                                            <li class="level3"><a href="#" title="Storage">Storage</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">KITCHEN Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Cleaning Tools">Cleaning Tools</a></li>
+                                            <li class="level3"><a href="#" title="Waste Bins">Waste Bins</a></li>
+                                            <li class="level3"><a href="#" title="Pots & Pans">Pots & Pans</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">Living Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Seatings">Seatings</a></li>
+                                            <li class="level3"><a href="#" title="Tables">Tables</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Series">Series</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">BATH Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Lighting">Lighting</a></li>
+                                            <li class="level3"><a href="#" title="Storage">Storage</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">KITCHEN Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Cleaning Tools">Cleaning Tools</a></li>
+                                            <li class="level3"><a href="#" title="Waste Bins">Waste Bins</a></li>
+                                            <li class="level3"><a href="#" title="Pots & Pans">Pots & Pans</a></li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                                  <div class="right-submenu">
+                                        <a href="#" title="images"><img class="img-responsive" src="assets/images/right-submenu.jpg" alt="Sub-Menu" /></a>
+                                  </div>
+                                  <!-- End RightSubMenu -->
+                              </div>
+                              <!-- End Dropdow Menu -->
+                            </li>
+                            <li class="level1 dropdown"><a href="#" title="collections">collections</a>
+                                <ul class="menu-level-1 dropdown-menu">
+                                    <li class="level2"><a href="lookbook_v2.html" title="Lookbook Style 1" target="_blank">Lookbook Style 1</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="lookbook_v2.html" title="Lookbook Style 1" target="_blank">Lookbook Style 1</a></li>
+                                            <li class="level3"><a href="lookbook_v3.html" title="Lookbook Style 2" target="_blank">Lookbook Style 2</a></li>
+                                            <li class="level3"><a href="lookbook_v4.html" title="Lookbook Style 3" target="_blank">Lookbook Style 3</a></li>
+                                            <li class="level3"><a href="lookbook_v5.html" title="Lookbook Style 4" target="_blank">Lookbook Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="lookbook_v3.html" title="Lookbook Style 2" target="_blank">Lookbook Style 2</a></li>
+                                    <li class="level2"><a href="lookbook_v4.html" title="Lookbook Style 3" target="_blank">Lookbook Style 3</a></li>
+                                    <li class="level2"><a href="lookbook_v5.html" title="Lookbook Style 4" target="_blank">Lookbook Style 4</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 dropdown"><a href="#" title="Page">Page</a>
+                                <div class="sub-menu dropdown-menu">
+                                    <div class="top-sub-menu">
+                                        <img src="assets/images/top-submenu.jpg" alt="images">
+                                    </div>
+                                  <ul class="menu-level-1">
+                                    <li class="level2"><a href="#">Living Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Seatings">Seatings</a></li>
+                                            <li class="level3"><a href="#" title="Tables">Tables</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Series">Series</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">BATH Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Lighting">Lighting</a></li>
+                                            <li class="level3"><a href="#" title="Storage">Storage</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">KITCHEN Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Cleaning Tools">Cleaning Tools</a></li>
+                                            <li class="level3"><a href="#" title="Waste Bins">Waste Bins</a></li>
+                                            <li class="level3"><a href="#" title="Pots & Pans">Pots & Pans</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">LOOKBOOK</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Decorative Pillows">Decorative Pillows</a></li>
+                                            <li class="level3"><a href="#" title="Picture Frames">Picture Frames</a></li>
+                                            <li class="level3"><a href="#" title="Clocks">Clocks</a></li>
+                                            <li class="level3"><a href="#" title="Baskets & Bins">Baskets & Bins</a></li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                              </div>
+                              <!-- End Dropdow Menu -->
+                            </li>
+                            <li class="level1 dropdown"><a href="single-post.html" title="ShortCode" target="_blank">ShortCode</a>
+                                <ul class="menu-level-1 dropdown-menu">
+                                    <li class="level2"><a href="accordion.html" title="accordion" target="_blank">accordion</a></li>
+                                    <li class="level2"><a href="box_content.html" title="box_content" target="_blank">box content</a></li>
+                                    <li class="level2"><a href="button.html" title="button" target="_blank">button</a></li>
+                                    <li class="level2"><a href="countdown.html" title="countdown" target="_blank">countdown</a></li>
+                                    <li class="level2"><a href="gmap.html" title="gmap" target="_blank">gmap</a></li>
+                                    <li class="level2"><a href="iconbox.html" title="iconbox" target="_blank">iconbox</a></li>
+                                    <li class="level2"><a href="social.html" title="social" target="_blank">social</a></li>
+                                    <li class="level2"><a href="tabs.html" title="tabs" target="_blank">tabs</a></li>
+                                    <li class="level2"><a href="post_shortcode.html" title="post shortcode" target="_blank">post shortcode</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>                
+                    </div>
+                    <!-- End container -->
+                </div>
+                <!-- End header-top -->
+        </header><!-- /header -->
+        <div class="container">
+            <div class="banner-header banner-lbook3 space-30">
+                <img src="assets/images/banner-mansory.jpg" alt="Banner-header">
+                <div class="text">
+                        <h3>Blog Details</h3>
+                        <p><a href="#" title="Home">Home</a><i class="fa fa-caret-right"></i>Blog Details</p>
+                    </div>
+            </div>
+        </div>
+        <div class="container container-ver2">
+            <div class="blog-post-container blog-page blog-classic">
+            <div id="primary" class="col-xs-12 col-md-9 float-left center">
+                <div class="blog-post-container box box-shadow single-post space-30"> 
+                    <div class="blog-post-item">
+                        <div class="head">
+                            <h3>The new Brand Identity last the Bahamas</h3>
+                            <p class="post-by"><span>September 20,2016</span><span><i class="fa fa-pencil-square-o"></i> Admin</span><span><i class="fa fa-comment-o"></i> 36 Comments</span></p>
+                        </div>
+                        <!-- End head -->
+                        <div class="blog-post-image hover-images">
+                            <a href="#" title="Post"><img class="img-responsive" src="assets/images/blog-details.jpg" alt=""></a>
+                        </div>  
+                        <div class="text align-left">           
+                            <p>Larely write reviews for products but with the EngoCreative, I am more than grateful. The site is fully customizable and you can really feel like ...</p>
+                            <p>Pellentesque habitant morbi tristique lorem ipsum malesuada fames ac turpis egestas. tibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit egestas semper. Aenean ultricies mi vitae est. </p>
+                            <ul class="box space-30">
+                                <li>Ut at erat id nunc mximus iculis in sed mi.</li>
+                                <li>Lorem ipsum dolor sit amet,consectetur adipiscing.</li>
+                                <li>Pellentesque a odio id felis iaculis posuere a at 100% dolor.</li>
+                                <li>Aenean pulvinar lorem congue, finibus sem 185.5cm/6'1'' blandit.</li>
+                                <li>Vestibulum convallis erat quis urna condimentum.</li>
+                            </ul>
+                            <div class="box box-shadow center content space-30">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip"</p>
+                            </div>
+                            <!-- End box-shadow -->
+                            <div class="social box">
+                                <h3>Share this :</h3>
+                                <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                            </div>
+                            <!-- End share -->
+                            <div class="box">
+                                <h3 class="title-v2 space-30">Related Posts</h3>
+                                <div class="blog-post-inner blog-related owl-nav-hidden center">
+                                    <div class="blog-post-item">
+                                        <div class="blog-post-image hover-images">
+                                            <a href="#" title="Post"><img src="assets/images/ImgBlog/2.jpg" alt=""></a>
+                                        </div>  
+                                        <div class="text">                          
+                                            <h3><a href="#" title="Integer scelerisque diam vitae aliquam fringilla.">The new Brand Identity last the Bahamas</a></h3>
+                                            <p class="post-by"><span><i class="fa fa-pencil-square-o"></i> Admin</span><span><i class="fa fa-comment-o"></i> 36 Comments</span></p>
+                                        </div>
+                                        <!-- End text -->
+                                    </div>
+                                    <!-- End item -->
+                                    <div class="blog-post-item">
+                                        <div class="blog-post-image hover-images">
+                                            <a href="#" title="Post"><img src="assets/images/ImgBlog/3.jpg" alt=""></a>
+                                        </div>  
+                                        <div class="text">                          
+                                            <h3><a href="#" title="Integer scelerisque diam vitae aliquam fringilla.">The new Brand Identity last the Bahamas</a></h3>
+                                            <p class="post-by"><span><i class="fa fa-pencil-square-o"></i> Admin</span><span><i class="fa fa-comment-o"></i> 36 Comments</span></p>
+                                        </div>
+                                        <!-- End text -->
+                                    </div>
+                                    <!-- End item -->
+                                    <div class="blog-post-item">
+                                        <div class="blog-post-image hover-images">
+                                            <a href="#" title="Post"><img src="assets/images/ImgBlog/6.jpg" alt=""></a>
+                                        </div>  
+                                        <div class="text">                          
+                                            <h3><a href="#" title="Integer scelerisque diam vitae aliquam fringilla.">The new Brand Identity last the Bahamas</a></h3>
+                                            <p class="post-by"><span><i class="fa fa-pencil-square-o"></i> Admin</span><span><i class="fa fa-comment-o"></i> 36 Comments</span></p>
+                                        </div>
+                                        <!-- End text -->
+                                    </div>
+                                    <!-- End item -->
+                                </div>
+                                <!-- End Blog3ItemSlider -->
+                            </div>
+                        </div>
+                        <!-- End text -->
+                    </div>
+                    <!-- End item -->                    
+                </div>
+                <!-- End blog-post-container -->  
+                <div class="blog-post-container single-post comments align-left box box-shadow space-30">
+                    <h3 class="title">Comments</h3>
+                    <div class="panel" id="media-object">
+                        <div class="panel-body">
+                            <ul class="media-list">
+                                <li class="media">
+                                    <a class="pull-left" href="#">
+                                       <img class="media-object img-circle" src="assets/images/avatar-1.jpg" alt="images">
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="text">
+                                            <h3>ERRIC CATONA</h3>
+                                            <p class="date">1 days ago</p>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidiunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                                            <a class="reply" href="#" title="reply"><i class="fa fa-long-arrow-left"></i> Reply</a>
+                                        </div>
+                                        <!-- End text -->
+                                        
+                                        <div class="media">
+                                            <a class="pull-left" href="#">
+                                                <img class="media-object img-circle" src="assets/images/avatar-1.jpg" alt="images">
+                                            </a>
+                                            <div class="media-body">
+                                                <div class="text">
+                                                    <h3>ERRIC CATONA</h3>
+                                                    <p class="date">5 days ago</p>
+                                                    <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. </p>
+                                                    <!-- Nested media object -->
+                                                    <a class="reply" href="#" title="reply"><i class="fa fa-long-arrow-left"></i> Reply</a>
+                                                </div>
+                                                <!-- End text -->
+                                            </div>
+                                            <!-- Nested media object -->
+                                        </div>
+                                        <!-- End media-body -->
+                                    </div>
+                                    <!-- End media body -->
+                                </li>
+                                <li class="media">
+                                    <a class="pull-left" href="#">
+                                       <img class="media-object img-circle" src="assets/images/avatar-1.jpg" alt="images">
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="text">
+                                            <h3>ERRIC CATONA</h3>
+                                            <p class="date">1 days ago</p>
+                                            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque. </p>
+                                            <!-- Nested media object -->
+                                            <a class="reply" href="#" title="reply"><i class="fa fa-long-arrow-left"></i> Reply</a>
+                                        </div>
+                                        <!-- End text -->
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End panel -->
+                    <h3 class="title">LEAVE A COMMENT</h3>
+                    <form class="form-horizontal space-50">
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="Name*" id="inputName" class="form-control">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" placeholder="Email*" id="inputsumary" class="form-control">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="text" placeholder="Website" id="inputemail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Comment" name="Comment" id="message" class="form-control"></textarea>
+                        </div>
+                        <a title="add tags" href="#" class="link-v1 rt">Send review</a>
+                    </form>
+                    <!-- End form -->
+                </div>
+            </div>
+            <!-- End Primary -->
+            <div id="secondary" class="widget-area col-xs-12 col-md-3 float-right">
+                <div class="wrap-sidebar">
+                <aside class="widget widget_search">
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="text" autocomplete="off" placeholder="Search..." value="" class="ajax_autosuggest_input ac_input" name="s">
+                            <button type="submit" class="icon-search">
+                                <i class="icons icon-magnifier"></i>
+                            </button>
+                        </form>
+                    </div>
+                </aside>
+                <aside class="widget blog-categories">
+                    <h3 class="widget-title">BLOG CATEGORIES</h3>
+                    <ul>
+                        <li><a href="#" title="Design">Design</a><span class="count">(08)</span></li>
+                        <li><a href="#" title="LOOKBOOK">LOOKBOOK</a><span class="count">(12)</span></li>
+                        <li><a href="#" title="FASHION">FASHION</a><span class="count">(06)</span></li>
+                        <li><a href="#" title="LIFE & STYLE">LIFE & STYLE</a><span class="count">(09)</span></li>
+                        <li><a href="#" title="IDEAS">IDEAS</a><span class="count">(24)</span></li>
+                    </ul>
+                </aside>
+                <aside class="widget recent-post">
+                    <h3 class="widget-title">RENCENT POSTS</h3>
+                    <ul>
+                        <li><a href="#" title="title">Interor Tips For Your Home</a></li>
+                        <li><a href="#" title="title">A Contemporary Washington Park Home</a></li>
+                        <li><a href="#" title="title">Way To Wear: Cover Up!</a></li>
+                        <li><a href="#" title="title">Penthouse with Skyline Views</a></li>
+                        <li><a href="#" title="title">A Modern Corona del Mar </a></li>
+                        <li><a href="#" title="title">Living in a Mansion Block</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_feature blog">
+                    <h3 class="widget-title">SALE PRODUCTS</h3>
+                    <ul class="box space-40">
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/1.jpg" alt="images">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/2.jpg" alt="">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/3.jpg" alt="">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/4.jpg" alt="">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+                <aside class="widget tags-cloud">
+                    <h3 class="widget-title">Blog Tags</h3>
+                    <div class="content">
+                        <a href="#" title="Armchair">Armchair</a>
+                        <a href="#" title="Sofa">Sofa</a>
+                        <a href="#" title="Table">Table</a>
+                        <a href="#" title="Decor">Decor</a>
+                        <a href="#" title="Storage">Storage</a>
+                        <a href="#" title="Rugs">Rugs</a>
+                        <a href="#" title="Gift">Gift</a>
+                        <a href="#" title="Lamp">Lamp</a>
+                        <a href="#" title="Outdoor">Outdoor</a>
+                    </div>
+                </aside>
+                <aside class="widget flick-photo">
+                    <h3 class="widget-title">Flick Photo</h3>
+                    <ul>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/1.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/2.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/3.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/4.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/5.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/6.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/7.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/8.jpg" alt="images">
+                            </a>
+                        </li>
+                        <li class="hover-images">
+                            <a href="#" title="images">
+                                <img src="assets/images/ImgBlog/9.jpg" alt="images">
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                </div>
+                <!-- End wrap-sidebar -->
+            </div>
+            <!-- End Secondary -->
+        </div>
+        <!-- end product sidebar -->
+        </div>
+        <!-- End cat-box-container -->
+        <div class="container">
+            <div class="newsletter-bottom center">
+                <div class="items">
+                    <img class="img-responsive" src="assets/images/newsletter-bottom.jpg" alt="Newsllter">
+                    <div class="text">
+                        <h3>Sign Up Special Promotions</h3>
+                        <p>Get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                        <form action="#" method="get" accept-charset="utf-8">
+                            <input type="text" onblur="if (this.value == '') {this.value = 'Enter your email...';}" onfocus="if(this.value != '') {this.value = '';}" value="Enter your email..." class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter" name="email"> 
+                            <button class="button button1 hover-white" title="Subscribe" type="submit">Join<i class="link-icon-white"></i></button>
+                        </form>
+                    </div>
+                     
+                </div>
+            </div>
+            </div>
+            <!-- End newsletter -->
+        <footer id="footer" class="footer-v1">         
+          <div class="container">
+                <div class="footer-top">
+                    <div class="logo-footer">
+                        <a href="#" title="Logo">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <p>&copy; Xanadu 2016 | Site by EngoCreative</p>
+                    </div>
+                    <div class="menu-footer">
+                        <ul>
+                            <li><a href="#" title="About Us">About Us</a></li>
+                            <li><a href="#" title="Advertise">Advertise</a></li>
+                            <li><a href="#" title="Press">Press</a></li>
+                            <li><a href="#" title="Contact Us">Contact Us</a></li>
+                            <li><a href="#" title="Store">Store</a></li>
+                            <li><a href="#" title="Careers">Careers</a></li>
+                        </ul>    
+                    </div>
+                    <!-- End menu-footer -->
+                    <div class="social">
+                        <a class="active" title="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a title="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <a title="youtube" href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a title="google plus" href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <!-- End social -->
+                </div>
+                <!-- End footer-top -->
+          </div>
+          <!-- End container -->
+        </footer>
+        </div>
+    <!-- End wrappage -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="assets/js/engo-plugins.js"></script>
+    <script type="text/javascript" src="assets/js/store.js"></script>
+    </body>
+        
+</html>
+

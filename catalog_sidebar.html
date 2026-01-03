@@ -1,0 +1,829 @@
+ <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/owl-slider.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/settings.css"/>
+        <link rel="stylesheet" type="text/css" href="assets/vendor/range-price.css"/>
+        <link rel="shortcut icon" href="assets/images/favicon.png" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,500,700,300' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="assets/js/jquery-1.11.1.min.js"></script>
+        <title>Catalog Sidebar</title>
+    </head>
+    <body>
+    <div class="awe-page-loading">
+         <div class="awe-loading-wrapper">
+            <div class="awe-loading-icon">
+               <img src="assets/images/logo.png" alt="images">
+            </div>
+            <div class="progress">
+               <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+         </div>
+      </div>    
+    <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content popup-search">
+                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <div class="modal-body">
+                    <div class="input-group">
+                        <input type="text" class="form-control control-search" placeholder="Search and hit enter...">
+                        <button class="button_search" type="button">Search</button>
+                    </div><!-- /input-group -->
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- End pushmenu -->
+    <div class="wrappage">
+        <header id="header" class="header-v1">
+            <div class="header-top">
+                    <div class="container">
+                    <div class="box">
+                        <p class="icon-menu-mobile"><i class="fa fa-bars" ></i></p>
+                        <div class="logo"><a href="#" title="Uno">
+                        <img src="assets/images/logo.png" alt="images">
+                        </a></div>
+                        <div class="logo-mobile"><a href="#" title="Xanadu"><img src="assets/images/logo.png" alt="Xanadu-Logo"></a></div>
+
+                        <div class="box-right">
+                            <div class="cart hover-menu">
+                                 <p class="icon-cart" title="Add to cart">
+                                        <i class="icon"></i>
+                                        <span class="cart-count">2</span>
+                                    </p>
+                                    <div class="cart-list list-menu">
+                                    <ul class="list">
+                                        <li>
+                                            <a href="#" title="" class="cart-product-image"><img src="assets/images/products/1.jpg" alt="Product"></a>
+                                            <div class="text">
+                                                <p class="product-name">Union Bed</p>
+                                                <p class="product-price"><span class="price-old">$700.00</span><span class="price">$350.00</span></p>
+                                                <p class="qty">QTY:01</p>
+                                            </div>
+                                            <a class="close" href="#" title="close"><i class="fa fa-times-circle"></i></a>
+                                        </li> 
+                                        <li>
+                                            <a href="#" title="" class="cart-product-image"><img src="assets/images/products/1.jpg" alt="Product"></a>
+                                            <div class="text">
+                                                <p class="product-name">Union Bed</p>
+                                                <p class="product-price"><span class="price-old">$700.00</span><span class="price">$350.00</span></p>
+                                                <p class="qty">QTY:01</p>
+                                            </div>
+                                            <a class="close" href="#" title="close"><i class="fa fa-times-circle"></i></a>
+                                        </li>                                   
+                                    </ul>
+                                    <p class="total"><span class="left">Total:</span> <span class="right">$1121.98</span></p>
+                                    <div class="bottom">
+                                        <a class="link-v1" href="#" title="viewcart">View Cart</a>
+                                        <a class="link-v1 rt" href="#" title="checkout">Check out</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="settings hover-menu">
+                                <a href="#" title="settings">
+                                    <span class="icons-setting"></span>
+                                </a>
+                                <ul class="submenu list-menu align-left">
+                                    <li>
+                                        <div class="container-fluid">
+                                            <h3>Select Language</h3>
+                                            <ul class="language">
+                                                <li class="active"><a href="#" title="language"><img src="assets/images/lg-1.jpg" alt="language"></a></li>
+                                                <li><a href="#" title="language"><img src="assets/images/lg-2.jpg" alt="language"></a></li>
+                                                <li><a href="#" title="language"><img src="assets/images/lg-3.jpg" alt="language"></a></li>
+                                                <li><a href="#" title="language"><img src="assets/images/lg-4.jpg" alt="language"></a></li>
+                                            </ul>
+                                            <h3>Select Currency</h3>
+                                            <ul class="currency">
+                                                <li class="active"><a href="#" title="$"><span class="fa fa-dollar"></span></a></li>
+                                                <li><a href="#" title="$"><span class="fa fa-euro"></span></a></li>
+                                                <li><a href="#" title="$"><span class="fa fa-cny"></span></a></li>
+                                            </ul>
+                                            <ul class="infor">
+                                                <li><span class="fa fa-unlock-alt"></span><a id="openLogin" href="#" title="login">Login / Register</a></li>
+                                                <li><span class="fa fa-user"></span><a href="#" title="My Account">My Account</a></li>
+                                                <li><span class="fa fa-heart"></span><a href="#" title="My Wishlist">My Wishlist</a></li>
+                                                <li><span class="fa fa-check-circle"></span><a href="#" title="Checkout">Checkout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="search dropdown" data-toggle="modal" data-target=".bs-example-modal-lg">
+                                <i class="icon"></i>
+                            </div>
+                        </div>
+                        <nav class="mega-menu">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                          <ul class="nav navbar-nav" id="navbar">
+                            <li class="level1 active dropdown"><a href="#" title="Home">Home</a>
+                                <ul class="menu-level-1 dropdown-menu">
+                                   <li class="level2"><a href="home_v1.html" title="Home 1">Home 1</a></li>
+                                    <li class="level2"><a href="home_v2.html" title="Home 2">Home 2</a></li>
+                                    <li class="level2"><a href="home_v3.html" title="Home 3">Home 3</a></li>
+                                </ul>
+                            </li>
+                            <li class="level1 dropdown">
+                                <a href="#" title="men">Shop</a>
+                                <div class="sub-menu sub-menu-v2 dropdown-menu">
+                                  <ul class="menu-level-1">
+                                    <li class="level2"><a href="#">Living Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Seatings">Seatings</a></li>
+                                            <li class="level3"><a href="#" title="Tables">Tables</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Series">Series</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">BATH Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Lighting">Lighting</a></li>
+                                            <li class="level3"><a href="#" title="Storage">Storage</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">KITCHEN Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Cleaning Tools">Cleaning Tools</a></li>
+                                            <li class="level3"><a href="#" title="Waste Bins">Waste Bins</a></li>
+                                            <li class="level3"><a href="#" title="Pots & Pans">Pots & Pans</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">Living Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Seatings">Seatings</a></li>
+                                            <li class="level3"><a href="#" title="Tables">Tables</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Series">Series</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">BATH Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Lighting">Lighting</a></li>
+                                            <li class="level3"><a href="#" title="Storage">Storage</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">KITCHEN Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Cleaning Tools">Cleaning Tools</a></li>
+                                            <li class="level3"><a href="#" title="Waste Bins">Waste Bins</a></li>
+                                            <li class="level3"><a href="#" title="Pots & Pans">Pots & Pans</a></li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                                  <div class="right-submenu">
+                                        <a href="#" title="images"><img class="img-responsive" src="assets/images/right-submenu.jpg" alt="Sub-Menu" /></a>
+                                  </div>
+                                  <!-- End RightSubMenu -->
+                              </div>
+                              <!-- End Dropdow Menu -->
+                            </li>
+                            <li class="level1 dropdown"><a href="#" title="collections">collections</a>
+                                <ul class="menu-level-1 dropdown-menu">
+                                    <li class="level2"><a href="lookbook_v2.html" title="Lookbook Style 1" target="_blank">Lookbook Style 1</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="lookbook_v2.html" title="Lookbook Style 1" target="_blank">Lookbook Style 1</a></li>
+                                            <li class="level3"><a href="lookbook_v3.html" title="Lookbook Style 2" target="_blank">Lookbook Style 2</a></li>
+                                            <li class="level3"><a href="lookbook_v4.html" title="Lookbook Style 3" target="_blank">Lookbook Style 3</a></li>
+                                            <li class="level3"><a href="lookbook_v5.html" title="Lookbook Style 4" target="_blank">Lookbook Style 4</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="lookbook_v3.html" title="Lookbook Style 2" target="_blank">Lookbook Style 2</a></li>
+                                    <li class="level2"><a href="lookbook_v4.html" title="Lookbook Style 3" target="_blank">Lookbook Style 3</a></li>
+                                    <li class="level2"><a href="lookbook_v5.html" title="Lookbook Style 4" target="_blank">Lookbook Style 4</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="level1 dropdown"><a href="#" title="Page">Page</a>
+                                <div class="sub-menu dropdown-menu">
+                                    <div class="top-sub-menu">
+                                        <img src="assets/images/top-submenu.jpg" alt="images">
+                                    </div>
+                                  <ul class="menu-level-1">
+                                    <li class="level2"><a href="#">Living Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Seatings">Seatings</a></li>
+                                            <li class="level3"><a href="#" title="Tables">Tables</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Series">Series</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="level2"><a href="#">BATH Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Lighting">Lighting</a></li>
+                                            <li class="level3"><a href="#" title="Storage">Storage</a></li>
+                                            <li class="level3"><a href="#" title="Accessories">Accessories</a></li>
+                                            <li class="level3"><a href="#" title="Beds">Beds</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">KITCHEN Room</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Cleaning Tools">Cleaning Tools</a></li>
+                                            <li class="level3"><a href="#" title="Waste Bins">Waste Bins</a></li>
+                                            <li class="level3"><a href="#" title="Pots & Pans">Pots & Pans</a></li>
+                                        </ul>
+                                    </li>
+                                     <li class="level2"><a href="#">LOOKBOOK</a>
+                                        <ul class="menu-level-2">
+                                            <li class="level3"><a href="#" title="Decorative Pillows">Decorative Pillows</a></li>
+                                            <li class="level3"><a href="#" title="Picture Frames">Picture Frames</a></li>
+                                            <li class="level3"><a href="#" title="Clocks">Clocks</a></li>
+                                            <li class="level3"><a href="#" title="Baskets & Bins">Baskets & Bins</a></li>
+                                        </ul>
+                                    </li>
+                                  </ul>
+                              </div>
+                              <!-- End Dropdow Menu -->
+                            </li>
+                            <li class="level1 dropdown"><a href="single-post.html" title="ShortCode" target="_blank">ShortCode</a>
+                                <ul class="menu-level-1 dropdown-menu">
+                                    <li class="level2"><a href="accordion.html" title="accordion" target="_blank">accordion</a></li>
+                                    <li class="level2"><a href="box_content.html" title="box_content" target="_blank">box content</a></li>
+                                    <li class="level2"><a href="button.html" title="button" target="_blank">button</a></li>
+                                    <li class="level2"><a href="countdown.html" title="countdown" target="_blank">countdown</a></li>
+                                    <li class="level2"><a href="gmap.html" title="gmap" target="_blank">gmap</a></li>
+                                    <li class="level2"><a href="iconbox.html" title="iconbox" target="_blank">iconbox</a></li>
+                                    <li class="level2"><a href="social.html" title="social" target="_blank">social</a></li>
+                                    <li class="level2"><a href="tabs.html" title="tabs" target="_blank">tabs</a></li>
+                                    <li class="level2"><a href="post_shortcode.html" title="post shortcode" target="_blank">post shortcode</a></li>
+                                </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                    </div>                
+                    </div>
+                    <!-- End container -->
+                </div>
+                <!-- End header-top -->
+        </header><!-- /header --> 
+        <div class="container">
+            <div class="banner-header banner-lbook3 space-30">
+                <img src="assets/images/banner-mansory.jpg" alt="Banner-header">
+                <div class="text">
+                    <h3>all products</h3>
+                    <p><a href="#" title="Home">Home</a><i class="fa fa-caret-right"></i>All Products</p>
+                </div>
+            </div>
+        </div>
+         <!-- End Banner Grid -->
+        <div class="container">
+            <div id="primary" class="col-xs-12 col-md-9">  
+                    <div class="wrap-breadcrumb">
+                        <div class="ordering">
+                            <div class="float-left">
+                                <span class="col active"></span>
+                                <span class="list"></span>
+                                <p class="result-count">Showing 1-12 of 30 relults</p>
+                            </div>
+                            <div class="float-right">
+                            <form action="#" method="get" class="order-by">
+                                <p>Sort by :</p>
+                                <select class="orderby" name="orderby">
+                                        <option>popularity</option>
+                                        <option selected="selected">average rating</option>
+                                        <option>newness</option>
+                                        <option>price: low to high</option>
+                                        <option>price: high to low</option>
+                                </select>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="products ver2 grid_full grid_sidebar hover-shadow furniture">
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                            <div class="item-inner">
+                                <div class="product">
+                                    <div class="product-images">
+                                        <a href="#" title="product-images">
+                                            <img class="primary_image" src="assets/images/products/featured/1.jpg" alt=""/>
+                                        </a>
+										<div class="action">
+											<a class="wish" href="#" title="Wishlist" ><i class="icon icon-heart"></i></a>
+											<a class="zoom" href="#" title="Quick view" ><i class="icon icon-magnifier-add "></i></a>
+											<a class="add-cart" href="#" title="Add to cart" ><i class="icon-bag"></i></a>
+										</div>
+                                    </div>
+                                    <a href="#" title="Bouble Fabric Blazer"><p class="product-title">Bouble Fabric Blazer</p></a>
+                                    <p class="product-price-old">$700.00</p>
+                                    <p class="product-price">$69.90</p>
+                                    <p class="description">Dramatically transition excellent information rather than mission-critical results. Competently communicate fully tested core competencies through holistic resources. Professionally maintain high-payoff best practices whereas user-centric alignments. Intrinsicly engage future-proof best practices whereas economically sound resources. Holisticly maximize multidisciplinary synergy before magnetice-tailers.</p>
+                                    
+                                    <div class="social box">
+                                        <h3>Share this :</h3>
+                                        <a class="twitter" href="#" title="social"><i class="fa fa-twitter-square"></i></a>
+                                        <a class="dribbble" href="#" title="social"><i class="fa fa-dribbble"></i></a>
+                                        <a class="skype" href="#" title="social"><i class="fa fa-skype"></i></a>
+                                        <a class="pinterest" href="#" title="social"><i class="fa fa-pinterest"></i></a>
+                                        <a class="facebook" href="#" title="social"><i class="fa fa-facebook-square"></i></a>
+                                    </div>
+                                </div>
+                                <!-- End product -->
+                            </div>
+                    </div>
+                    <!-- End product-content products  -->
+                    <div class="pagination-container">
+                        <nav class="pagination align-right">    
+                            <a class="prev page-numbers" href="#"><i class="fa fa-angle-left"></i></a>
+                            <span class="page-numbers current">1</span>
+                            <a class="page-numbers" href="#">2</a>
+                            <a class="page-numbers" href="#">3</a>
+                            <a class="next page-numbers" href="#"><i class="fa fa-angle-right"></i></a>
+                        </nav>
+                    </div>
+                    <!-- End pagination-container -->
+                </div>
+                <!-- End Primary -->
+                
+            <div id="secondary" class="widget-area col-xs-12 col-md-3">
+                <aside class="widget widget_product_categories">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="product-categories">
+                        <li><a href="#" title="Men">Men</a>
+                            <ul class="children">
+                                <li><a href="#" title="Bag & Luggage">Bag & Luggage</a></li>
+                                <li><a href="#" title="Eyewear">Eyewear</a></li>
+                                <li><a href="#" title="Jewelry">Jewelry</a></li>
+                                <li><a href="#" title="Shoes">Shoes</a></li>
+                                <li><a href="#" title="Skyrts">Skyrts</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="woment">woment</a>
+                            <ul>
+                                <li><a href="#" title="Bag">Bag</a></li>
+                                <li><a href="#" title="Bed & Bath">Bed & Bath</a></li>
+                                <li><a href="#" title="Sport tops & Vest">Sport tops & Vest</a></li>
+                                <li><a href="#" title="Sport undewear">Sport undewear</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" title="kids">kids</a></li>
+                        <li><a href="#" title="All Product">All Product</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_color">
+                    <h3 class="widget-title">By Color</h3>
+                    <ul>
+                        <li><i class="color1"></i><a href="#" title="Black">Blue</a></li>
+                        <li><i class="color2"></i><a href="#" title="Brown">Brown</a></li>
+                        <li><i class="color3"></i><a href="#" title="Gray">Gray</a></li>
+                        <li><i class="color4"></i><a href="#" title="Green">Green</a></li>
+                        <li><i class="color5"></i><a href="#" title="Orange">Orange</a></li>
+                        <li><i class="color6"></i><a href="#" title="White">White</a></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_by_price">
+                    <h3 class="widget-title">By Price</h3>
+                    <div class="layout-slider">
+                      <span><input id="Slider1" type="text" name="price" value="200;800" /></span>
+                    </div>
+                    <a class="link-v1 space-30" href="#" title="fillter">fillter</a>
+                </aside>
+                <aside class="widget widget_link">
+                    <h3 class="widget-title">By Brand</h3>
+                    <ul>
+                        <li><a href="#" title="Aeccaft">Aeccaft</a><span class="count">(15)</span></li>
+                        <li><a href="#" title="Artek">Artek</a><span class="count">(09)</span></li>
+                        <li><a href="#" title="Bower">Bower</a><span class="count">(12)</span></li>
+                        <li><a href="#" title="Culinarium">Culinarium</a><span class="count">(16)</span></li>
+                        <li><a href="#" title="Desu">Desu</a><span class="count">(16)</span></li>
+                    </ul>
+                </aside>
+                <aside class="widget widget_feature">
+                    <h3 class="widget-title">Feature Products</h3>
+                    <ul>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/1.jpg" alt="images">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/1.jpg" alt="">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/1.jpg" alt="">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="images" href="#" title="images">
+                                <img class="img-responsive" src="assets/images/products/furniture/1.jpg" alt="">
+                            </a>
+                            <div class="text">
+                                <h2>
+                                    <a href="#" title="Butterfly Bar Stool">Butterfly Bar Stool</a>
+                                </h2>
+                                <p><span class="price-old">$700</span><span>$350</span></p>
+                            </div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- End Secondary -->
+        </div>
+        <!-- end product sidebar -->
+        <div class="container">
+        <div class="newsletter-bottom center">
+            <div class="items">
+                <img class="img-responsive" src="assets/images/newsletter-bottom.jpg" alt="Newsllter">
+                <div class="text">
+                    <h3>Sign Up Special Promotions</h3>
+                    <p>Get exclusive deals you wont find anywhere else straight to your inbox!</p>
+                    <form action="#" method="get" accept-charset="utf-8">
+                        <input type="text" onblur="if (this.value == '') {this.value = 'Enter your email...';}" onfocus="if(this.value != '') {this.value = '';}" value="Enter your email..." class="input-text required-entry validate-email" title="Sign up for our newsletter" id="newsletter" name="email"> 
+                        <button class="button button1 hover-white" title="Subscribe" type="submit">Join<i class="link-icon-white"></i></button>
+                    </form>
+                </div>
+                 
+            </div>
+        </div>
+        </div>
+        <!-- End newsletter -->
+        <footer id="footer" class="footer-v1">         
+          <div class="container">
+                <div class="footer-top">
+                    <div class="logo-footer">
+                        <a href="#" title="Logo">
+                            <img src="assets/images/logo.png" alt="Logo">
+                        </a>
+                        <p>&copy; Xanadu 2016 | Site by EngoCreative</p>
+                    </div>
+                    <div class="menu-footer">
+                        <ul>
+                            <li><a href="#" title="About Us">About Us</a></li>
+                            <li><a href="#" title="Advertise">Advertise</a></li>
+                            <li><a href="#" title="Press">Press</a></li>
+                            <li><a href="#" title="Contact Us">Contact Us</a></li>
+                            <li><a href="#" title="Store">Store</a></li>
+                            <li><a href="#" title="Careers">Careers</a></li>
+                        </ul>    
+                    </div>
+                    <!-- End menu-footer -->
+                    <div class="social">
+                        <a class="active" title="twitter" href="#"><i class="fa fa-twitter"></i></a>
+                        <a title="facebook" href="#"><i class="fa fa-facebook"></i></a>
+                        <a title="youtube" href="#"><i class="fa fa-youtube-play"></i></a>
+                        <a title="google plus" href="#"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <!-- End social -->
+                </div>
+                <!-- End footer-top -->
+          </div>
+          <!-- End container -->
+        </footer>
+        </div>
+    <!-- End wrappage -->
+     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="assets/js/engo-plugins.js"></script>
+    <script type="text/javascript" src="assets/js/price-range.js"></script>
+    <script type="text/javascript">
+      jQuery("#Slider1").slider({ 
+        from: 0,
+        to: 1000,
+        step: 100,
+        smooth: true,
+        round: 0,
+        skin: "plastic"
+        });
+    </script>
+    <script type="text/javascript" src="assets/js/store.js"></script>
+    </body>
+</html>
+
